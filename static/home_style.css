@@ -3,17 +3,18 @@
 } */
 
 body {
-    background-color: blue;
+    background-color: #2a6592;
 }
 
 #header {
+    border: 2px solid black;
     margin: auto;
     width: 50%;
     padding-top: 1px;
     border-radius: 30px;
     min-height: fit-content;
     text-align: center;
-    background-color: yellow;
+    background-color: #db9833;
 }
 h1 {
     margin-bottom: 1px;
@@ -30,9 +31,8 @@ a {
     height: fit-content;
 }
 #main {
-    background-color: purple;
     padding: 5%;
-    height: 100%;
+    height: inherit;
 }
 
 #projects_title {
@@ -47,7 +47,7 @@ a {
     margin: 2% auto 0px auto;
     padding: 25px 0px;
     height: fit-content;
-    background-color: blue;
+    background-color: #db9833;
     border-top: 2px solid black;
     border-bottom: none;
     border-left: 2px solid black;
@@ -64,11 +64,13 @@ a {
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
-    background-color: green;
-    height: 45%;
+    background-color: #f6d8ac;
+    height: 60%;
 }
 
 .project_blocks {
+    border-radius: 30px;
+    background-color: #8ec3eb;
     border: 2px solid black;
     margin: 5px auto;
     /* display: inline; */
