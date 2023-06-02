@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Item Details</title>
+    <link href="{{ url_for('static', path='/home_style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Home</h1>
+        </div>
+        <div id="projects_title">
+            <h2>Projects</h2>
+        </div>
+        <div id="projects">
+            {% for stuff in context %}
+                <div class="project_blocks">{{stuff}}</div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

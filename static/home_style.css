@@ -1,0 +1,41 @@
+* {
+    border: 2px dotted red;
+}
+
+body {
+    background-color: blue;
+}
+
+#header {
+    text-align: center;
+    height: 20%;
+    background-color: yellow;
+}
+
+#main {
+    background-color: purple;
+    padding: 5%;
+    height: 100%;
+}
+
+#projects_title {
+    height: 10%;
+    margin-top: 5%;
+    text-align: center;
+    background-color: green;
+}
+
+#projects {
+    padding: 2%;
+    padding-left: 5%;
+    background-color: green;
+    height: 45%;
+    overflow: scroll;
+}
+
+.project_blocks {
+    margin: 2%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
