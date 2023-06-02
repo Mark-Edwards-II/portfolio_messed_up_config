@@ -1,17 +1,34 @@
-* {
+/* * {
     border: 2px dotted red;
-}
+} */
 
 body {
     background-color: blue;
 }
 
 #header {
+    margin: auto;
+    width: 50%;
+    padding-top: 1px;
+    border-radius: 30px;
+    min-height: fit-content;
     text-align: center;
-    height: 20%;
     background-color: yellow;
 }
+h1 {
+    margin-bottom: 1px;
+}
+a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 0px 5% 0px 5%;
+}
 
+#external {
+    display: inline-block;
+    color: black;
+    height: fit-content;
+}
 #main {
     background-color: purple;
     padding: 5%;
@@ -19,23 +36,43 @@ body {
 }
 
 #projects_title {
-    height: 10%;
-    margin-top: 5%;
+    margin: 0px;
+    height: fit-content;
     text-align: center;
-    background-color: green;
+}
+
+#project_header {
+    border-radius: 50px 50px 0px 0px;
+    width: 75%;
+    margin: 2% auto 0px auto;
+    padding: 25px 0px;
+    height: fit-content;
+    background-color: blue;
+    border-top: 2px solid black;
+    border-bottom: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 #projects {
-    padding: 2%;
-    padding-left: 5%;
+    padding-top: 10px;
+    margin: 0% auto 0% auto;
+    width: 75%;
+    overflow: scroll;
+    border-radius: 0px 0px 50px 50px;
+    border-top: none;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
     background-color: green;
     height: 45%;
-    overflow: scroll;
 }
 
 .project_blocks {
-    margin: 2%;
-    display: inline-block;
+    border: 2px solid black;
+    margin: 5px auto;
+    /* display: inline; */
     height: 200px;
-    width: 200px;
+    width: inherit;
 }
+
