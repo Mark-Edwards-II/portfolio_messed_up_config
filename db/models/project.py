@@ -1,15 +1,20 @@
 from pydantic import BaseModel, FilePath
 
 
-class ProjectDetails(BaseModel):
-    """Representation of what is expect in a project description.
+class ProjectSummary(BaseModel):
+    """The summary of a Project.
     """
-    proj_id: str
+    project_id: int
     title: str
-    images: list[FilePath]  
-    paragraphs: list[str]
+    image: FilePath
     summary: str
-    external_links: str | None = None
+    tags: list[str]
 
 
+class Document(BaseModel):
+    """Details documenting the projecit
+    """
+    document_id: int
+    project_id: int
+    large_text: str
 

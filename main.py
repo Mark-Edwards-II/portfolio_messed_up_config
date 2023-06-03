@@ -16,6 +16,7 @@ templates = Jinja2Templates(directory="templates")
 # Define a route for the home page using the HTTP GET method and declare the response type.
 @app.get("/", response_class=HTMLResponse)
 async def read_main(request: Request):
+    
 
     return templates.TemplateResponse("home.html", {"request": request, "context":get_content()})
 

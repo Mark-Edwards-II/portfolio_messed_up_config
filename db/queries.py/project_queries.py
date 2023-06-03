@@ -1,7 +1,7 @@
-from models import ProjectDetails
+from models.project import ProjectDetails
 
 
-bogus1 = ProjectDetails()
+bogus1 = ProjectDetails(1,)
 # bogus2 = ProjectDetails(2,)
 # bogus3 = ProjectDetails(3,)
 # bogus4 = ProjectDetails(4,)
