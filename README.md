@@ -9,10 +9,8 @@ This is entended to be a light weight web app to display personal development pr
 - [] deploy to AWS
 - [x] set up pipenv
 - [] add a reusable project template so projects can be viewed with more details.
-- [] isolate web app to just 
 - [x] add a database locally.
     - [] create project model for database very simple to start. 
-    - [] set up alembic
     - [] connect local app to database
 
 ---
@@ -23,4 +21,3 @@ This is entended to be a light weight web app to display personal development pr
 - jinja2
 - pydantic
 - sqlalchemy
-- alembic

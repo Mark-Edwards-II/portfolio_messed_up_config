@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Text, ARRAY
+from sqlalchemy import Column, Integer, String, Text, ARRAY, ForeignKey, ForeignKeyConstraint
 from database import Base, engine
 
 
@@ -17,7 +17,7 @@ class Project(Base):
 class Document(Base):
     __tablename__ = 'documents'
     id = Column(Integer, primary_key=True)
-    project_id = Column(String(30))
+    project_id = ForeignKey()
     image_path = Column(String(50))
     summary = Column(String(1200))
     tags = Column(ARRAY(String))

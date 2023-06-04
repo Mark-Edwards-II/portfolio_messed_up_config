@@ -1,4 +1,4 @@
-from models.project import Project 
+from models import Project, Document
 from sqlalchemy.orm import Session
 
 def get_all_projects(db: Session):

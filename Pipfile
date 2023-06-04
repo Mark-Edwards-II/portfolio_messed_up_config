@@ -9,7 +9,6 @@ uvicorn = "*"
 jinja2 = "*"
 pydantic = "*"
 sqlalchemy = "*"
-alembic = "*"
 psycopg2 = "*"
 
 [dev-packages]
