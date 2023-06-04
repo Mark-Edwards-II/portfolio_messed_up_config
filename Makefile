@@ -3,5 +3,6 @@
 run:
 	uvicorn main:app --host 0.0.0.0 --reload
 
-db:
-	docker 
+run_db:
+	docker build . -t postgres -f postgres_folder/Dockerfile
+	docker run -it -d --name postgres -p 5432:5432 postgres

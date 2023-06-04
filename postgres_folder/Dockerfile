@@ -8,9 +8,6 @@ ENV POSTGRES_DB mydatabase
 
 # # Copy custom initialization scripts to the docker-entrypoint-initdb.d directory
 # # This will be executed when the container starts for the first time
-COPY init.sql /docker-entrypoint-initdb.d/
+# COPY /postgres_folder/init.sql /docker-entrypoint-initdb.d/
 
-# Expose the default PostgreSQL port
-# EXPOSE 5432
 
-# RUN \q

@@ -24,4 +24,8 @@ This is entended to be a light weight web app to display personal development pr
 - pydantic
 - sqlalchemy
 - alembic
-- 
+
+
+psql -h localhost -p <Port> -d <Name> -U <User> -W
+
+postgresql://myuser:mypassword@localhost:5432/mydatabase

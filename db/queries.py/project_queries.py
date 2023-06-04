@@ -1,12 +1,14 @@
-from models.project import ProjectDetails
+from models.project import Project 
+from sqlalchemy.orm import Session
 
+def get_all_projects(db: Session):
+    return db.query(Project).all()
 
-bogus1 = ProjectDetails(1,)
-# bogus2 = ProjectDetails(2,)
-# bogus3 = ProjectDetails(3,)
-# bogus4 = ProjectDetails(4,)
-# bogus5 = ProjectDetails(5,)
-# bogus6 = ProjectDetails(6,)
+def get_project(db: Session, project_id: int):
+    return db.query(Project).filter(Project.id == project_id).first()
 
-def get_project():
-    pass
+def create_project(db: Session, project: Project):
+    db.add(project)
+    db.commit()
+    db.refresh(project)
+    return project
