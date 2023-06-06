@@ -1,6 +1,6 @@
 # portfolio
 This is entended to be a light weight web app to display personal development projects and a project in itself that is Perpetually in development.
-
+I am the only contributer I had previously misconfigured my git config causing my commits to reference another Mark Edwards.
 ---
 
 ## TODOs
