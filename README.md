@@ -24,3 +24,5 @@ I am the only contributer I had previously misconfigured my git config causing m
 - jinja2
 - pydantic
 - sqlalchemy
+- alembic
+- psycopg2
