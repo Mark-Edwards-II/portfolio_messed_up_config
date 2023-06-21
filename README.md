@@ -5,14 +5,17 @@ I am the only contributer I had previously misconfigured my git config causing m
 
 ## TODOs
 - [] Finish basic styling / minimum viable product
-- [] build out IAC to easily make changes to deployed instance.
+- [x] add a database locally.
+    - [x] connect local app to database
+    - [x] create project model for database. 
+    - [x] add alembic and generate migrations from sqlalchemy model
+    - [x] create tables in database
+
+- [] automate deployment and necessary development processes
+    - determine sub tasking
 - [] deploy to AWS
 - [x] set up pipenv
 - [] add a reusable project template so projects can be viewed with more details.
-- [x] add a database locally.
-    - [] create project model for database very simple to start. 
-    - [] connect local app to database
-
 ---
 
 ### first level dependencies
