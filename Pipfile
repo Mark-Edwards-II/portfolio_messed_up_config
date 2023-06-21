@@ -10,6 +10,8 @@ jinja2 = "*"
 pydantic = "*"
 sqlalchemy = "*"
 psycopg2 = "*"
+alembic = "*"
+pytest = "*"
 
 [dev-packages]
 
